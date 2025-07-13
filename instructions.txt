@@ -1,0 +1,20 @@
+instructions:
+- first change theme name in style.css ( important )
+-directory instructions :
+  - assets directory store all assets like images, css, js ,etc.
+  -inc directory store all functions related files that is assets enqueue files, register posttype and taxonomies files, etc.
+  -includes directory stores all section, snippets( code of single post/tile/box ), blocks, etc files in their respective folders .
+  -template directory stores all template files .
+
+- to create new page simple make a new php file with page-$slug.php . note : replace $slug with actual page slug .
+- if you are making new template make it in templates directory and not in theme directory.
+- if you are making some section of template make a seprate template-parts directory and make file inside that .note: template section is different from normal section .
+- if you are using blocks then make sure to create new block in sperate files and do not create multiple blocks in one single file .
+
+make sure to read template hierarchy to get file related infomations :
+  https://developer.wordpress.org/themes/basics/template-hierarchy/
+
+useful links :
+  theme related docs    : https://developer.wordpress.org/themes/
+  function related docs : https://developer.wordpress.org/reference/
+  functions reference   : https://codex.wordpress.org/Function_Reference
