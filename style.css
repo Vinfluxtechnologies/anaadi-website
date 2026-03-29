@@ -1,1 +1,6 @@
 /* Theme Name: Anaadi */
+
+/* 08-08-25 */
+    #main-navigation {
+        z-index: 999;
+    }

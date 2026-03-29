@@ -76,6 +76,29 @@
       </div>
     </footer>
     <!-- /footer -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const configRadios = document.querySelectorAll('input[name="flat-configuration"]');
+  const priceOptions = document.querySelectorAll('.price-option');
+
+  function updatePriceOptions(selectedValue) {
+    priceOptions.forEach(function (option) {
+      const config = option.getAttribute('data-config');
+      option.style.display = config === selectedValue ? 'block' : 'none';
+    });
+  }
+
+  // Initial Hide
+  updatePriceOptions('');
+
+  configRadios.forEach(function (radio) {
+    radio.addEventListener('change', function () {
+      updatePriceOptions(this.value);
+    });
+  });
+});
+</script>
+
 
   </div>
 

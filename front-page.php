@@ -146,12 +146,6 @@
         </div>
       </div>
       <!-- /section -->
-
-            <section class="section">
-        <div class="container">
-<?php echo do_shortcode('[contact-form-7 id="afdbc1e" title="Contact form"]'); ?>
-</div>
-</div>
     </div>
     <!-- /content -->
 
